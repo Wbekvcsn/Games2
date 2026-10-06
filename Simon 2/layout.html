@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simon Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        
+        <h1>Simon Game</h1>
+
+        
+        <div class="score-container">
+
+            <div class="score-box">
+                <span id="level">0</span>
+                <small>Level</small>
+            </div>
+
+            <div class="score-box">
+                <span id="best">0</span>
+                <small>Best</small>
+            </div>
+
+        </div>
+
+
+       
+        <div class="simon-board">
+
+            <button class="color-button red" id="W">
+                <span>W</span>
+            </button>
+
+            <button class="color-button blue" id="S">
+                <span>S</span>
+            </button>
+
+            <button class="color-button yellow" id="A">
+                <span>A</span>
+            </button>
+
+            <button class="color-button green" id="Q">
+                <span>Q</span>
+            </button>
+
+
+            <!-- Center -->
+            <div class="center">
+
+                <h2 id="message">Ready?</h2>
+
+                <p id="sub-message">Press Start</p>
+
+            </div>
+
+        </div>
+
+
+       
+        <div class="controls">
+
+            <button id="startBtn" class="start-btn">
+                Start
+            </button>
+
+            <select id="difficulty">
+                <option value="normal">Normal</option>
+                <option value="easy">Easy</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button id="strictBtn" class="control-btn">
+                Strict: off
+            </button>
+
+            <button id="soundBtn" class="control-btn active">
+                Sound: on
+            </button>
+
+        </div>
+
+
+        <p class="keyboard-info">
+            Use mouse or keyboard: Q W A S
+        </p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
